@@ -35,7 +35,7 @@ header {
 main {
     background: #e1d7c9;
     width: calc(100vw - 20%);
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem);
     margin: 0 10%;
 }
 
@@ -50,6 +50,7 @@ main {
     width: 50px;
 }
 
+/**/
 .suchfeld {
     position: absolute;
     top: -.25rem;
@@ -66,3 +67,36 @@ main {
         font-size: 1.5rem;
     }
 
+/**/
+.quicklink {
+    display: block;
+    position: relative;
+    top: 2.5rem;
+    left: 1rem;
+    width: 25%;
+    min-width: 200px;
+    height: calc(30vh - 1rem);
+    background-size: contain;
+}
+
+    .quicklink.erholung {
+        background-image: url('assets/quicklinks-erholung.png');
+    }
+
+    .quicklink.innenstadt {
+        background-image: url('assets/quicklinks-innenstadt.png');
+    }
+
+    .quicklink.kinder {
+        background-image: url('assets/quicklinks-kinder.png');
+    }
+
+    .quicklink-title {
+        display: block;
+        position: relative;
+        top: -1.5rem;
+        padding: .5rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: .5rem
+    }
