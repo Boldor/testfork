@@ -37,6 +37,7 @@ main {
     width: calc(100vw - 20%);
     min-height: calc(100vh - 4rem);
     margin: 0 10%;
+    padding: 1rem;
 }
 
 /* Elements */
@@ -70,12 +71,8 @@ main {
 /**/
 .quicklink {
     display: block;
-    position: relative;
-    top: 2.5rem;
-    left: 1rem;
-    width: 25%;
-    min-width: 200px;
-    height: calc(30vh - 1rem);
+    width: 200px;
+    height: 200px;
     background-size: contain;
 }
 
@@ -93,10 +90,8 @@ main {
 
     .quicklink-title {
         display: block;
-        position: relative;
-        top: -1.5rem;
         padding: .5rem;
         color: #fff;
         background: rgba(0, 0, 0, 0.35);
-        border-radius: .5rem
+        border-radius: .5rem;
     }
