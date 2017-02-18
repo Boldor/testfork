@@ -59,6 +59,34 @@ main {
 
 aside {
     float: left;
+    width: 200px;
+}
+    
+    aside img {
+        width: 100%;
+    }
+
+    aside p {
+        padding: 1rem;
+        font-size: .75rem;
+    }
+
+    aside a, aside a:active, aside a:hover, aside a:visited {
+        color: #333;
+        margin-top: .5rem;
+        display: block;
+    }
+
+    aside:nth-of-type(2) {
+        background: #fff;
+        border-radius: 1rem;
+    }
+
+/* Helpers */
+.cf:after {
+    content:"";
+    display:block;
+    clear:both;
 }
 
 /* Elements */
@@ -84,6 +112,7 @@ aside {
     padding: .75rem 1rem .25rem 1rem;
 }
 
+    .suchfeld,
     .suchfeld::-webkit-input-placeholder {
         color: #fff;
         font-size: 1.5rem;
@@ -92,6 +121,8 @@ aside {
 /**/
 .quicklink {
     display: block;
+    position: relative;
+    top: 1rem;
     width: 200px;
     height: 200px;
     background-size: contain;
@@ -110,6 +141,8 @@ aside {
     }
 
     .quicklink-title {
+        position: relative;
+        top: -1.25rem;
         display: block;
         padding: .5rem;
         color: #fff;
@@ -118,9 +151,13 @@ aside {
     }
 
 /**/
-.menu {}
+.menu {
+    width: calc(100% - 400px);
+    float: left;
+    text-align: center;
+}
     .menu li {
-        float: left;
+        display: inline-block;
         list-style: none;
         padding: .5rem 1.5rem .5rem .75rem;
         margin: .15rem;
