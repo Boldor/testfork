@@ -1,0 +1,68 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    height: 100%;
+    color: #333;
+    font: 100%/1.35 "Helvetica", Arial, sans-serif;
+    background-image: url('assets/bg-datteln.jpg');
+    background-size: cover;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header {
+    width: 100vw;
+    padding: 5px 10%;
+    background: #1b5d1b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+main {
+    background: #e1d7c9;
+    width: calc(100vw - 20%);
+    min-height: 100vh;
+    margin: 0 10%;
+}
+
+/* Elements */
+.logo {
+    display: inline-block;
+    position: relative;
+    top: 5.5px;
+    background-image: url('assets/logo-datteln.png');
+    background-size: contain;
+    height: 2.5rem;
+    width: 50px;
+}
+
+.suchfeld {
+    position: absolute;
+    top: -.25rem;
+    right: 10%;
+    height: 4.25rem;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    padding: .75rem 1rem .25rem 1rem;
+}
+
+    .suchfeld::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
