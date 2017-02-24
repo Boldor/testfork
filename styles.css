@@ -95,6 +95,53 @@ aside {
         margin: 1rem 0;
     }
 
+footer {
+    height: 3.75rem;
+    background: #f9f7f4;
+    width: calc(100% - 400px);
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    top: 1rem;
+}
+
+    .footer-title {
+        line-height: 3.75rem;
+        display: block;
+        float: left;
+        margin: 0 2.5rem 0 .5rem;
+        color: #8a4230;
+    }
+
+    .footer-link {
+        line-height: 3.75rem;
+        display: block;
+        float: right;
+        margin: 0 .5rem 0 0;
+        color: #8a4230;
+        text-decoration: underline;
+        font-size: .7rem;
+    }
+
+    i.circle-arrow {
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        left: calc(50% - 160px);
+        top: 1rem;
+        background-image: url("assets/circled-arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    i.circle-arrow:nth-of-type(2) {
+        transform: rotate(180deg);
+        left: initial;
+        right: calc(50% - 220px);
+    }
+
 h1 {
     font-size: 1rem;
     font-weight: 600;
